@@ -1,0 +1,33 @@
+.issueCover {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+.issueCover__bg {
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.issueCover.n1 .issueCover__bg {
+  background-image: url(./images/issue1.png);
+}
+
+.issueCover.n2 .issueCover__bg {
+  background-image: url(./images/issue2.png);
+}
+
+.issueCover.n3 .issueCover__bg {
+  background-image: url(./images/issue3.png);
+}
+
+.issueCover.n4 .issueCover__bg {
+  background-image: url(./images/issue4.png);
+}
+
+.issueCover.n5 .issueCover__bg {
+  background-image: url(./images/issue5.png);
+}

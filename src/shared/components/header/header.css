@@ -1,0 +1,22 @@
+.header{
+
+}
+
+.header__menu {
+  width: 100%;
+  position: fixed;
+  top: 85px;
+  z-index: 1;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.3s ease;
+}
+
+.header__menuWrap {
+  max-width: 400px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.header.pressed .header__menu {
+  transform: translate3d(0, -85px, 0);
+}

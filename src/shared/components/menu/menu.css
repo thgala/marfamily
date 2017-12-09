@@ -1,0 +1,31 @@
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu__item {
+  color: #4D353E;
+  text-transform: uppercase;
+  transition: all 0.15s ease;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.menu__item:after {
+  content: '.';
+  margin: 0 15px;
+  color: #4D353E;
+}
+
+.menu__item:hover:after {
+  color: #4D353E;
+}
+
+.menu__item:last-child:after {
+  display: none;
+}
+
+.menu__item:hover {
+  color: #a0a0a0;
+}

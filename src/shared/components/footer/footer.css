@@ -1,0 +1,41 @@
+.footer{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.footer__wrap {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+.footer__logo {
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 100%;
+  margin-right: 60px;
+}
+
+.footer__logo:last-child {
+  margin-right: 0;
+}
+
+.footer__logo--marfajournal {
+  width: 25px;
+  background-image: url(./images/marfajournal.svg);
+}
+
+.footer__logo--marfoffice {
+  width: 50px;
+  background-image: url(./images/marfoffice.svg);
+}
+
+.footer__logo--marfamily {
+  width: 210px;
+  background-image: url(./images/marfamily.svg); 
+}
