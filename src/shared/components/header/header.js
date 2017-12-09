@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import {
   Link,
 } from 'react-router-dom'
+import Waypoint from 'react-waypoint'
 
 import './header.css'
 
@@ -14,9 +15,9 @@ class Header extends Component {
     super(props)
 
     this.state = {
-      pressed: false,
+      offset: 0,
     }
-    this.SCROLL_LIMIT = 100
+    this.SCROLL_LIMIT = 85
     this.handleScroll = this.handleScroll.bind(this)
   }
 
@@ -29,28 +30,29 @@ class Header extends Component {
   }
 
   handleScroll(event) {
-    const scrollTop = document.body.scrollTop || document.documentElement.scrollTop
-    const { pressed } = this.state
+    const offset = document.body.scrollTop || document.documentElement.scrollTop
 
-    if (scrollTop > this.SCROLL_LIMIT) {
+    if(offset < this.SCROLL_LIMIT){
       this.setState({
-        pressed: true,
+        offset,
       })
-    } else if(pressed){
+    } else {
       this.setState({
-        pressed: false,
-      })    
+        offset: this.SCROLL_LIMIT,
+      })
     }
   }
 
   render() {
-    const { pressed } = this.state
-    const pressedClass = pressed ? `pressed` : ``
+    const { offset } = this.state
+    const headerMenuStyles = {
+      transform: `translate3d(0, -${offset}px, 0)`
+    }
 
     return (
-      <div className={`header ${pressedClass}`}>
+      <div className='header'>
         <MiniGallery />
-        <div className='header__menu'>
+        <div className='header__menu' style={headerMenuStyles}>
           <div className='header__menuWrap'>
             <Menu />
           </div>
