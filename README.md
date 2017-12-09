@@ -1,1 +1,3 @@
-# marfamily
+# Marfamily
+
+A YOUNG woman had a MOUNTAIN to climb. She comes across rather enthusiastic ABOUT a party or any OTHER social gathering that INVOLVES her friends and PERHAPS business associates. Her LIFE is a picnic. Her DECADENT approach to social structures PRIORITISES her kind of PLEASURES. The MEASURE of pleasure. Crossing the line from pleasantly NEUROTIC to annoyingly TROUBLED. One step from glory. ALWAYS.
